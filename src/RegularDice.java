@@ -6,6 +6,7 @@ public class RegularDice {
 	//establish a constructor
 	public RegularDice() {
 		setRoll(); 
+		numberSides = 6;
 	}
 	
 	public double setRoll () {
@@ -14,6 +15,9 @@ public class RegularDice {
 	}
 	public int getNumberSides() {
 		return numberSides;
+	}
+	public double getRoll() {
+		return roll;
 	}
 	
 	
