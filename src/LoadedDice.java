@@ -2,6 +2,7 @@
 public class LoadedDice {
 	private int numberSides;
 	private double roll;
+	private double sum;
 	public LoadedDice(int n) {
 		numberSides = n; 
 		setRoll();
@@ -24,6 +25,17 @@ public class LoadedDice {
 	}
 	public double getRoll() {
 		return roll;
+	}
+	public double totalSum(double s) {
+		double sum = s; 
+		return sum;
+		
+	}
+	public double getTotalSum() {
+		return sum; 
+	}
+	public String toString() {
+		return "roll is: " + roll + "and sum is" + sum;
 	}
 		
 

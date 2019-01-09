@@ -12,17 +12,21 @@ public class Unit2ChoHanProject {
 			if (whichDie == 1) {
 				RegularDice dice1 = new RegularDice();
 				RegularDice dice2 = new RegularDice();
+				double totalRoll = dice1.getRoll() + dice2.getRoll();
+				dice1.totalSum(dice1.getRoll() + dice2.getRoll());
+	
 				
 			}
 			else {
 				LoadedDice dice1 = new LoadedDice(10);
-				LoadedDice dice2 = new LoadedDice(10);
-			}
-			int totalRoll = dice1.getRoll() + dice2.getRoll(); 
+				LoadedDice dice2 = new LoadedDice(10); 
+				double totalRoll = dice1.getRoll() + dice2.getRoll();
+				dice1.totalSum(dice1.getRoll() + dice2.getRoll());
+			} 
 			//start with randomizing the rolls 
 			
 			String choHan;
-			if (totalRoll %2 ==0) {
+			if (sum %2 ==0) {
 				choHan = "Han"; 
 			}
 			else {
